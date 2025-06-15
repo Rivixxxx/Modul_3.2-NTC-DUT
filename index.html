@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Подключение ДУТ</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background: #f8fafc;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2563eb;
+            font-size: 2rem;
+            border-bottom: 2px solid #2563eb;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.25rem;
+            font-weight: 700;
+        }
+        h2 {
+            color: #2563eb;
+            font-size: 1.75rem;
+            border-bottom: 1px solid #e5e7eb;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.2rem;
+            font-weight: 600;
+        }
+        h3 {
+            color: #2563eb;
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        h4 {
+            color: #2563eb;
+            font-size: 1.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        h5, h6 {
+            color: #2563eb;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        section, .section {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .step {
+            background: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+        blockquote {
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 4px;
+            font-style: italic;
+        }
+        blockquote.is-info, blockquote.info {
+            background: #d1ecf1;
+            border-left: 4px solid #38bdf8;
+        }
+        blockquote.is-warning, blockquote.warn {
+            background: #fff3cd;
+            border-left: 4px solid #facc15;
+        }
+        blockquote.is-danger, blockquote.danger {
+            background: #ffe0e0;
+            border-left: 4px solid #ef4444;
+        }
+        blockquote.success {
+            background: #d4edda;
+            border-left: 4px solid #22c55e;
+        }
+        .toc {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 30px;
+        }
+        .toc-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: #2563eb;
+            margin-bottom: 10px;
+        }
+        .toc a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+        .toc a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            background: #3b82f6;
+            color: #fff;
+            border-radius: 4px;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+            transition: background 0.2s;
+            font-size: 1rem;
+        }
+        .btn:hover {
+            background: #2563eb;
+        }
+        code, pre {
+            background: #f1f5f9;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        code {
+            padding: 2px 4px;
+            font-size: 1em;
+        }
+        pre {
+            padding: 10px;
+            font-size: 1em;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        th, td {
+            border: 1px solid #e2e8f0;
+            padding: 10px;
+        }
+        th {
+            background: #f8fafc;
+        }
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            margin: 1.5rem 0;
+            max-width: 100%;
+            height: auto;
+        }
+        @media print {
+            .no-print { display: none !important; }
+            section, .section { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+<main class="max-w-3xl mx-auto py-8">
+<section>
+<!-- Контент перенесён из <template slot="contents"> -->
+<h1 id="подключение">Подключение ДУТ</h1>
+<p>Ниже приведены примеры схем подключения</p>
+<h3 id="устройства-сигнал">Устройства СИГНАЛ</h3>
+<p><img alt="2022-08-09_145223.png" src="images/2022-08-09_145223.png"></p>
+<h3 id="устройства-смарт">Устройства СМАРТ</h3>
+<p><img alt="2022-08-09_145234.png" src="images/2022-08-09_145234.png"></p>
+<h1 id="настройка">Настройка</h1>
+<h2 id="дут">ДУТ</h2>
+<p>При настройке датчиков следует соблюдать несколько обязательных правил:</p>
+<ol>
+<li><strong>Выдача данных</strong> должна производится <strong>по запросу</strong> от Устройства</li>
+<li>Необходимо <strong>узнать адрес</strong> датчика.</li>
+</ol>
+<blockquote class="warn">
+<p>При подключении нескольких датчиков, их адреса не должны совпадать</p>
+</blockquote>
+<ol start="3">
+<li>Необходимо <strong>узнать скорость</strong> работы интерфейса.</li>
+</ol>
+<blockquote class="info">
+<p>Обычно используется скорость <code>19200</code> бит/с.</p>
+</blockquote>
+<h2 id="устройство">Устройство</h2>
+<h3 id="настройка-интерфейса">Настройка интерфейса</h3>
+<blockquote class="warn">
+<p>Настройки скорости интерфейса и адреса в устройствах должны совпадать с настройками в датчиках</p>
+</blockquote>
+<p><img alt="2022-08-09_150133.png" src="images/2022-08-09_150133.png"></p>
+<h3 id="настройка-интерфейса-1">Настройка интерфейса</h3>
+<p><img alt="2022-08-09_150621.png" src="images/2022-08-09_150621.png"></p>
+<blockquote class="info">
+<p>Если выбран протокол передачи данных <code>FLEX 1.0</code>, то на сервер передается только <strong>Уровень</strong>.<br>
+Если выбран протокол <code>FLEX 2.0</code> и выше, то на сервер передается <strong>Уровень</strong> и <strong>Температура</strong>.</p>
+</blockquote>
+<h1 id="проверка">Проверка</h1>
+<h2 id="телеметрия">Телеметрия</h2>
+<p>Для проверки через окно <a href="#">"Телеметрия"</a> необходимо подключиться к устройству по USB или удаленно.</p>
+<blockquote class="info">
+<p>Процесс удаленного подключения описан в соответствующей <a href="#">статье</a>.</p>
+</blockquote>
+<p>После подключения конфигуратором к устройству, необходимо открыть окно "Телеметрия"</p>
+<p><img alt="2022-08-09_151340.png" src="images/2022-08-09_151340.png"></p>
+<p>Далее нужно включить автоматическое обновление параметров и посмотреть показания</p>
+<p><img alt="2022-08-09_151700.png" src="images/2022-08-09_151700.png"></p>
+<h2 id="коды-ошибок">Коды ошибок</h2>
+<p>В значении уровня топлива устройство может устанавливать коды ошибок - специальные значения, которые говорят о причине какой-либо неисправности.<br>
+Ниже приведена таблица с описанием кодов ошибок, которые могут быть установлены при работе с датчиками уровня топлива.</p>
+<p><img alt="2022-08-09_152018.png" src="images/2022-08-09_152018.png"></p>
+<h2 id="окно-логов">Окно логов</h2>
+<blockquote class="danger">
+<p>Просмотр логов возможен <strong>только при подключении по USB</strong></p>
+</blockquote>
+<blockquote class="info">
+<p>Подробное описание по работе и функционалу окна логов приведено в соответствующей <a href="#">статье</a></p>
+</blockquote>
+<p>Подключитесь по USB, в главном окне конфигуратора, в меню <strong>"Дополнительно"</strong> выберите пункт <strong>"Показать окно логов"</strong>.</p>
+<p><img alt="2022-08-09_154641.png" src="images/2022-08-09_154641.png"></p>
+<p>Ниже приведено описание сообщений ДУТ, работающих в протоколе "LLS".</p>
+<blockquote class="info">
+<p>Все значения влоге представлены в HEX <em>(в шестнадцатеричной системе)</em></p>
+</blockquote>
+<h5 id="запросы">Запросы</h5>
+<p>Записи с меткой <code>OUT</code> - запросы от Терминала к ДУТ.</p>
+<p>Например, запрос <code>3101066с</code> это:<br>
+    <code>31</code> - заголовок, говорящий, что сообщение отправлено от Терминала к ДУТ;<br>
+    <code>01</code> - адрес запрашиваемого датчика;<br>
+    <code>06</code> - тип команды <em>("6" - запрос уровня топлива)</em>;<br>
+    <code>6с</code> - контрольная сумма <em>(не имеет смысла в данном случае)</em>.</p>
+<h5 id="ответы">Ответы</h5>
+<p>Записи с меткой <code>IN</code> - ответы от ДУТ к Терминалу.</p>
+<p>Например, ответ <code>3e0106196400a00f74</code> это:<br>
+    <code>3e</code> - заголовок, говорящий, что сообщение отправлено от ДУТ к Терминалу;<br>
+    <code>01</code> - адрес запрашиваемого датчика;<br>
+    <code>06</code> - тип команды <em>("6" - запрос уровня топлива)</em>;<br>
+    <code>19</code> - температура;<br>
+    <code>6400</code> - уровень;<br>
+    <code>a00f</code> - частота;<br>
+    <code>74</code> - контрольная сумма <em>(не имеет смысла в данном случае)</em>.</p>
+<h6 id="преобразование-температуры">Преобразование температуры</h6>
+<p>Для преобразования значения температуры нужно только перевести значение из шестнадцатеричной системы в десятичную<br>
+<code>0х19</code> -> <code>25</code>*C</p>
+<h6 id="преобразование-уровня">Преобразование уровня</h6>
+<p>Для преобразования значения уровня топлива нужно:</p>
+<ul>
+<li>поменять байты местами<br>
+<code>0x6400</code> -> <code>0x0064</code></li>
+<li>перевести из шестнадцатеричной системы в десятичную<br>
+<code>0x0064</code> -> <code>100</code> у.е.</li>
+</ul>
+<h6 id="преобразование-частоты">Преобразование частоты</h6>
+<p>Для преобразования значения частоты датчика топлива нужно:</p>
+<ul>
+<li>поменять байты местами<br>
+<code>0xa00f</code> -> <code>0x0fa0</code></li>
+<li>перевести из шестнадцатеричной системы в десятичную<br>
+<code>0x0fa0</code> -> <code>4000</code> Гц</li>
+</ul>
+<h5 id="дополнительно">Дополнительно</h5>
+<p>Перевод из шестнадцатеричной системы в десятичную удобно производить через калькулятор Windows в режиме "Программист":</p>
+<p><img alt="2022-08-09_155922.png" src="images/2022-08-09_155922.png"></p>
+</section>
+</main>
+</body>
+</html>
